@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Adaptive Text-to-Command Translation",
             description: "Fine-tuned a T5-Small transformer for translating natural language to structured navigation plans.",
             image: "t5_navigation.jpg",
-            github: "https://github.com/vijaydevmasters/NLP"
+            github: "https://github.com/suhasnagaraj99/NLP"
         },
         "Lidar_Alignment": {
             title: "Multimodal Alignment for LiDAR and Image Data",
             description: "Developed a LiDAR-RGB alignment model using Q-Former on the KITTI dataset.",
-            image: "lidar_alignment.jpg",
+            image: "lidar_alignment.png",
             github: "https://github.com/vijaydevmasters/Q-former"
         },
         "Mario_AI": {
