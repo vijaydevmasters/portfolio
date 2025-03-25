@@ -1,50 +1,55 @@
 /* General Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Body Background */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;  /* White background */
     color: #212529;
     text-align: center;
 }
 
-/* Hero Section */
+/* Hero Section with Light Green and Olive Green Gradient */
 #hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
-    color: black;
+    background: #e9f7ef; /* Light green to olive green */
+    color: #000000;
 }
 
-#hero h1 {
-    font-size: 3rem;
+/* Hero Buttons Container */
+.hero-buttons {
+    margin-top: 20px;
 }
 
 .highlight {
-    color: #007bff;
+    color: #65a417;
 }
 
-
-
-
-@keyframes fadeText {
-    0%, 20% { opacity: 1; }
-    25%, 100% { opacity: 0; }
-}
-
+/* Button Styling Updated to Olive Green */
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin: 10px 5px; /* Spacing between buttons */
     padding: 10px 20px;
-    color: white;
-    background: #007bff;
+    color: #fff;
+    background: #acc581; /* Olive green */
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+.btn:hover {
+    background: #cbe596; /* Slightly lighter olive on hover */
+}
 /* Navbar */
 #navbar {
     position: sticky;
@@ -72,7 +77,30 @@ body {
     font-size: 1rem;
 }
 
-/* Projects */
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 2rem 0;
+}
+
+.about-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #e9f7ef;
+    padding: 2rem 0;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -92,34 +120,111 @@ body {
     transform: scale(1.05);
 }
 
-/* Ensure all project images scale properly */
 .project-card img {
-    width: 100%;  /* Adjusts to the container */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 300px; /* Prevents images from being too large */
+    width: 100%;
+    height: auto;
+    max-width: 300px;
     border-radius: 5px;
-    object-fit: cover; /* Ensures consistent display */
+    object-fit: cover;
+}
+
+/* Highlight Work Experience Section */
+#experience {
+    background-color: #ffffff; /* Light olive green */
+    color: #212529;
+    text-align: left;
+    padding: 2rem;
+    border: 2px solid #000000; /* Olive border */
+    border-radius: 10px;
+    margin: 20px;
 }
 
 
+#experience h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.experience-item h3 {
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+.experience-item h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #555;
+}
+
+.experience-item p {
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.experience-media {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.experience-media img,
+.experience-media video {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Project Details Video Styling */
+#project-details .project-media video {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
 /* Contact Section */
-.contact-info a {
+#contact {
+    background-color: #e9f7ef;
+    padding: 2rem 0;
+}
+
+.contact-info a,
+#contact a {
     color: #007bff;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+#contact a:hover {
     text-decoration: underline;
 }
 
-.about-text {
-    text-align: justify;
-    line-height: 1.6;
-    margin: 10px 0;
+/* Alternating section backgrounds */
+section:nth-of-type(odd) {
+  background-color: #FFFDD0; /* Cream color */
 }
 
-.about-container {
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
+section:nth-of-type(even) {
+  background-color: #90EE90; /* Light green */
+}
+
+.media-container {
+  width: 100%;
+  max-width: 500px; /* Optional: limits the container's width */
+  aspect-ratio: 16 / 9; /* Sets a fixed aspect ratio */
+  overflow: hidden; /* Ensures any overflow is hidden */
+  margin: 0 auto; /* Centers the container if desired */
+}
+
+.media-container img,
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use 'contain' if you want to show the entire media without cropping */
+  display: block;
 }

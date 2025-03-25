@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="project-title">Project Name</h1>
-        <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
-    </header>
+  <header>
+    <h1 id="project-title">Project Name</h1>
+    <a href="index.html#projects" class="back-to-projects">Back to Projects</a>
+  </header>
 
-    <section id="project-details">
-        <img id="project-image" src="" alt="Project Image">
-        <p id="project-description"></p>
-        <p><a id="github-link" href="" target="_blank" class="back-to-projects">GitHub Repository</a></p>
-    </section>
+  <section id="project-details">
+    <!-- Project Image -->
+    <img id="project-image" src="" alt="Project Image">
 
-    <script src="script.js"></script>
+    <!-- Core project description -->
+    <p id="project-description"></p>
+
+    <!-- Optional GitHub link -->
+    <p>
+      <a id="github-link" href="" target="_blank" class="back-to-projects">
+        GitHub Repository
+      </a>
+    </p>
+
+    <!-- NEW: Video Section -->
+    <div class="project-media">
+      <video id="project-video" controls>
+        <source id="video-source" src="" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <!-- NEW: Extended Explanation -->
+    <div class="project-more-info" id="project-more-info">
+      <!-- This will be populated by script.js or you can hardcode text here. -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
