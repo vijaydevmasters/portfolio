@@ -1,5 +1,9 @@
 // Define your project data globally or within the function
 const projectData = {
+
+  "Learning_Pipeline": {
+      github: "https://github.com/vijaydevmasters/Spotify_For_Learning"
+  },
   "T5_Navigation": {
       github: "https://github.com/suhasnagaraj99/NLP"
   },
